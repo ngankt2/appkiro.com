@@ -1,15 +1,15 @@
 {
-  "version": "1.0.17",
-  "notes": "## What's New in AgentProfiles 1.0.17\n\n- **Basic User Guide**: Added comprehensive usage instructions in the Help section covering profile creation, sandbox isolation, quota monitoring, and Terminal/IDE project linking.\n- **Release Log**: Added version history log directly inside Help to track features, improvements, and updates across versions.\n- **Update Channel**: Enabled automated update channel and asset verification.\n",
-  "pub_date": "2026-09-23T12:34:59.128539Z",
+  "version": "1.0.18",
+  "notes": "### AgentProfiles 1.0.18\n\n- **Cải tiến kênh cập nhật**: Kiểm tra và đồng bộ chữ ký số, bổ sung cơ chế kiểm soát pipeline phát hành chặt chẽ để đảm bảo gói cài đặt luôn sẵn sàng trước khi công bố kênh cập nhật.\n- **Ghi nhận chẩn đoán lỗi**: Ghi nhận chi tiết nguyên nhân lỗi khi cập nhật để hỗ trợ xử lý sự cố chính xác.\n- **Tối ưu hóa và nâng cấp độ ổn định**: Cập nhật bản sửa lỗi và tăng cường độ tin cậy cho ứng dụng trên macOS.\n",
+  "pub_date": "2026-09-23T14:39:54.178908Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.17/AgentProfiles_1.0.17_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbVdOZzEwcXlLUWg1bjJLcWZqWmtSeFEwYUVxQkJHcWVuN0FoSUIybEpPMk1KTG1FeC9saVFCZS95QzFZcFJ2R24rc2lnZ2JVZVp1eWFlK0tycjZVMUFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMTY2ODk5CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMTdfdW5pdmVyc2FsLmFwcC50YXIuZ3oKRUNtekRvUmNRS3RlT2hlWS9HK2JpbUNWeEhnNXFmTUVMd1hVY2VNajlrbmRWdyt3OFJ0SFJ1N09iMEhHMTVhM2lyZ0xNcmpMV250emdHTHVtRGFNQXc9PQo="
+      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.18/AgentProfiles_1.0.18_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbVVrOS9kY3NVdXR5WFFTUlRSYk9tQ28vb01CTU1iaE44K0VBNGM5UWNxNzcxLzRVdW1XaUFmWW5hZnFpdUNBSUp4K3pDZU93enFYa3FVVDFBNmowS1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMTc0Mzk0CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMThfdW5pdmVyc2FsLmFwcC50YXIuZ3oKRGNjbEZFQmNOY1c4allHR0s2UVljZVplRWFEcFo0cFRWQUlGR29JV01WVm5IdkFZVjdJVUt5TnlxK1NWRjJkSUkrdFZJZm1aRTlqcWtSc0hpSTlwQWc9PQo="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.17/AgentProfiles_1.0.17_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbVdOZzEwcXlLUWg1bjJLcWZqWmtSeFEwYUVxQkJHcWVuN0FoSUIybEpPMk1KTG1FeC9saVFCZS95QzFZcFJ2R24rc2lnZ2JVZVp1eWFlK0tycjZVMUFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMTY2ODk5CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMTdfdW5pdmVyc2FsLmFwcC50YXIuZ3oKRUNtekRvUmNRS3RlT2hlWS9HK2JpbUNWeEhnNXFmTUVMd1hVY2VNajlrbmRWdyt3OFJ0SFJ1N09iMEhHMTVhM2lyZ0xNcmpMV250emdHTHVtRGFNQXc9PQo="
+      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.18/AgentProfiles_1.0.18_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbVVrOS9kY3NVdXR5WFFTUlRSYk9tQ28vb01CTU1iaE44K0VBNGM5UWNxNzcxLzRVdW1XaUFmWW5hZnFpdUNBSUp4K3pDZU93enFYa3FVVDFBNmowS1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMTc0Mzk0CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMThfdW5pdmVyc2FsLmFwcC50YXIuZ3oKRGNjbEZFQmNOY1c4allHR0s2UVljZVplRWFEcFo0cFRWQUlGR29JV01WVm5IdkFZVjdJVUt5TnlxK1NWRjJkSUkrdFZJZm1aRTlqcWtSc0hpSTlwQWc9PQo="
     }
   }
 }
