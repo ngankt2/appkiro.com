@@ -1,0 +1,21 @@
+name: Validate app update channels
+
+on:
+  push:
+    paths: ['updates/**', 'scripts/**', 'tests/**', '.github/workflows/validate-updates.yml']
+  pull_request:
+    paths: ['updates/**', 'scripts/**', 'tests/**', '.github/workflows/validate-updates.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m unittest discover -s tests -p '*_test.py'
+      - run: python3 scripts/validate-updates.py
