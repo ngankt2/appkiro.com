@@ -1,0 +1,16 @@
+{
+  "version": "1.0.24",
+  "architectures": [
+    "x86_64",
+    "arm64"
+  ],
+  "minimum_macos": "10.13",
+  "signing": "ad hoc",
+  "notarized": false,
+  "notarization_submissions": [],
+  "gatekeeper_verified": false,
+  "bundle_signature_verified": true,
+  "installer_contents_verified": true,
+  "installer": "AgentProfiles_1.0.24_universal-local.dmg",
+  "sha256": "4fccf5a1aea360318c74b5c09bfbccc8a44c4d227091145c49b0df8d7c606417"
+}

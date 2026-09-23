@@ -1,0 +1,44 @@
+name: Publish desktop package
+
+on:
+  push:
+    branches: [release/desktop-1.0.24]
+    paths:
+      - release-assets/**
+      - .github/workflows/publish-desktop-release.yml
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify package checksums
+        working-directory: release-assets
+        run: sha256sum --check SHA256SUMS
+      - name: Publish verified release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create agentprofiles-v1.0.24 \
+            --repo "$GITHUB_REPOSITORY" \
+            --target main \
+            --title "AgentProfiles 1.0.24" \
+            --notes-file release-assets/RELEASE-NOTES.md \
+            --draft \
+            --latest=false \
+            release-assets/AgentProfiles_1.0.24_universal-local.dmg \
+            release-assets/AgentProfiles_1.0.24_universal.app.tar.gz \
+            release-assets/AgentProfiles_1.0.24_universal.app.tar.gz.sig \
+            release-assets/latest.json \
+            release-assets/SHA256SUMS \
+            release-assets/README.txt \
+            release-assets/BUILD-INFO.json
+          gh release edit agentprofiles-v1.0.24 \
+            --repo "$GITHUB_REPOSITORY" \
+            --draft=false \
+            --prerelease \
+            --latest=false
