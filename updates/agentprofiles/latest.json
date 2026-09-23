@@ -1,15 +1,15 @@
 {
-  "version": "1.0.21",
-  "notes": "### AgentProfiles 1.0.21\n\n- **Phát hành gói cài đặt macOS**: Cung cấp bộ cài đặt DMG Universal (tương thích cả chip Apple Silicon và Intel) kèm kênh cập nhật tự động an toàn.\n- **Tối ưu hóa hiệu năng & độ ổn định**: Nâng cấp khả năng cô lập dữ liệu cho Claude Desktop, Codex Desktop, Antigravity Desktop và terminal CLI.\n- **Chuẩn bị mở rộng nền tảng**: Hoàn thiện cấu trúc phát hành cho các nền tảng kế tiếp.\n",
-  "pub_date": "2026-09-23T16:57:15.894458Z",
+  "version": "1.0.24",
+  "notes": "AgentProfiles 1.0.24 brings the current desktop app to a downloadable macOS Universal release.\n\n- Filter Desktop and Terminal profiles by provider, alongside search and sorting.\n- Keep newly created profiles visible when a previous filter or search would hide them.\n- Refine the search field, refresh controls and profile list layout.\n- View release history and the installed version in About.\n- Manage profile storage and open its folders from the app.\n\nDownload `AgentProfiles_1.0.24_universal-local.dmg` for macOS 11 or later. One installer supports both Apple Silicon and Intel. Open the DMG and drag AgentProfiles into Applications.\n\nThis is an early access build with an ad hoc signature. It is not notarized by Apple, so Gatekeeper may require approval in System Settings → Privacy & Security before opening it. The updater signature verifies the package and does not replace Apple notarization.\n\nWindows and Linux installers are coming soon. No mobile installer is included.\n\nValidation: 75 JavaScript tests and 131 Rust tests passed; 8 environment-dependent Rust tests were skipped. The universal executable, app signature and mounted DMG contents were verified.\n\nWebsite: https://appkiro.com/agent-profiles\n",
+  "pub_date": "2026-09-23T18:02:06.660961Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.21/AgentProfiles_1.0.21_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbVptUDBtYVFlSTlZazJNWU92U0gwT1BNK040U1ArNEFhemJPZWtJOGd0RzArMGtlc1JtNkd2U29mRHhvNXBSRjd4a0hLRjFCSUdEY2ZmbEpwN2x5VndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMTgyNjM1CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMjFfdW5pdmVyc2FsLmFwcC50YXIuZ3oKMmxDbUs4T0FtNlk0NmJ5a0dHODA0c2FUUENkdmI1d0NtcStvdDJFSjFYWmdmOTRDeDFsbGxsejN5WVpNQkd3dXV5eWFJckM5bmNseFgzVjV0bGlnRFE9PQo="
+      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbWZMNlZ4NjgzMDJhcEorRlozZElTUXNJZFgvdXdYbWJ3d2laV09waUx5M1lvL1dZenJyOGhKaWlzVEtQRFBkYWhVMUg0MEN3Ny9yUVIyc2dONlJneEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMTg2NTI2CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMjRfdW5pdmVyc2FsLmFwcC50YXIuZ3oKZVE2TTI3QkdMcXZuMDcyQVNwK2JWSXJZc29pNERwRzE2V2d1b1l0NWxiTXdSOXl1bkx3SmV1K3RjOGZWZmxoaE45Wmx3alIwUDNSWlloTnNYTEkwRHc9PQo="
     },
     "darwin-x86_64": {
-      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.21/AgentProfiles_1.0.21_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbVptUDBtYVFlSTlZazJNWU92U0gwT1BNK040U1ArNEFhemJPZWtJOGd0RzArMGtlc1JtNkd2U29mRHhvNXBSRjd4a0hLRjFCSUdEY2ZmbEpwN2x5VndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMTgyNjM1CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMjFfdW5pdmVyc2FsLmFwcC50YXIuZ3oKMmxDbUs4T0FtNlk0NmJ5a0dHODA0c2FUUENkdmI1d0NtcStvdDJFSjFYWmdmOTRDeDFsbGxsejN5WVpNQkd3dXV5eWFJckM5bmNseFgzVjV0bGlnRFE9PQo="
+      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbWZMNlZ4NjgzMDJhcEorRlozZElTUXNJZFgvdXdYbWJ3d2laV09waUx5M1lvL1dZenJyOGhKaWlzVEtQRFBkYWhVMUg0MEN3Ny9yUVIyc2dONlJneEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMTg2NTI2CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMjRfdW5pdmVyc2FsLmFwcC50YXIuZ3oKZVE2TTI3QkdMcXZuMDcyQVNwK2JWSXJZc29pNERwRzE2V2d1b1l0NWxiTXdSOXl1bkx3SmV1K3RjOGZWZmxoaE45Wmx3alIwUDNSWlloTnNYTEkwRHc9PQo="
     }
   }
 }
