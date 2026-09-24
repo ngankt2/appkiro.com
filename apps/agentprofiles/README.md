@@ -20,29 +20,28 @@ Profile management runs locally and launches tools already installed on your com
 
 | Detail | Current release |
 | --- | --- |
-| Version | **1.0.24** |
+| Version | **1.0.34** |
 | Operating system | macOS 11 or later |
 | Architecture | Universal: Apple Silicon and Intel |
-| Release status | Early access, ad hoc signed, not notarized |
+| Signing | Ad hoc signature; not notarized by Apple |
 
-**[Download AgentProfiles 1.0.24 for macOS (.dmg)](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal-local.dmg)**
+**[Download AgentProfiles 1.0.34 for macOS (.dmg)](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.34/AgentProfiles_1.0.34_universal-local.dmg)**
 
 Open the DMG, drag AgentProfiles into Applications, and launch the app. Install the tools you want to use with your profiles before creating those profiles.
 
-## What's new in 1.0.24
+## What's new in 1.0.34
 
-- Filter Desktop and Terminal profiles by tool alongside search and sorting.
-- Keep newly created profiles visible when an existing filter or search would hide them.
-- Refine the search field, refresh controls, and profile list layout.
-- View release history and the installed version in About.
-- Manage storage locations and open profile folders from the app.
+- Place the Desktop and Terminal tabs below search for easier navigation.
+- Keep account details available after closing profiles or restarting the app.
+- Use compact controls and clearer selected states in workspaces and Light appearance.
+- Keep all color options together in a wider profile editor.
 
 The app checks its dedicated update channel at startup and every six hours while visible. You can also check manually in **Settings → App updates**.
 
 | Update resource | Link |
 | --- | --- |
-| Current release | [AgentProfiles 1.0.24](https://github.com/ngankt2/appkiro.com/releases/tag/agentprofiles-v1.0.24) |
-| Signed update package | [.app.tar.gz](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal.app.tar.gz) · [.sig](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal.app.tar.gz.sig) |
+| Current release | [AgentProfiles 1.0.34](https://github.com/ngankt2/appkiro.com/releases/tag/agentprofiles-v1.0.34) |
+| Signed update package | [.app.tar.gz](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.34/AgentProfiles_1.0.34_universal.app.tar.gz) · [.sig](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.34/AgentProfiles_1.0.34_universal.app.tar.gz.sig) |
 | Update channel | [latest.json](https://raw.githubusercontent.com/ngankt2/appkiro.com/main/updates/agentprofiles/latest.json) |
 | Release history | [All AgentProfiles releases](https://github.com/ngankt2/appkiro.com/releases?q=agentprofiles) |
 
