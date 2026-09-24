@@ -1,0 +1,15 @@
+{
+  "version": "1.0.34",
+  "notes": "AgentProfiles 1.0.34 packages the current desktop source for macOS on Apple Silicon and Intel.\n\nChanges since the previous public build:\n\n- Desktop and Terminal tabs sit below search for easier navigation.\n- Account details remain available after closing profiles or restarting the app.\n- Compact controls and clearer selected states improve the workspace and Light appearance.\n- The wider profile editor keeps all color options together.\n\nDownload `AgentProfiles_1.0.34_universal-local.dmg`, open it, and drag AgentProfiles to Applications.\n\nThis build uses an ad hoc signature and is not notarized by Apple. macOS Gatekeeper may block it when downloaded. The updater package has a separate cryptographic signature; that signature does not replace Apple notarization.\n\nValidation: 85 JavaScript tests, 131 Rust tests, 6 update-interface tests, and 3 packaging tests passed. Eight Rust tests requiring configured external apps or accounts were skipped. The universal executable, application signature, and mounted installer contents were verified.\n\nWebsite: https://appkiro.com/agent-profiles\n",
+  "pub_date": "2026-09-24T08:56:47.936859Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.34/AgentProfiles_1.0.34_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbWI3dmxBY3MrUGF3dnlRanpRMjU1OEh5R0YzUGp1NzBjbHNxSGhBOTcyVEZPdVM4QUs0U1NVbTV1TlkrQUdIaWZjWEJxUXd2YXdlZksvdzR4YUFiUUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjQwMjA3CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMzRfdW5pdmVyc2FsLmFwcC50YXIuZ3oKVkdDUTltYm1nUWZmVVp4MWc2RVYzbEcwZmdjSXNiVDIxY3ZqVjR1Mm9pQWtLU2Vjd3ZHS3hZWWk3Zm1JWFZhSWVtWmRNVkgrcUgvOTNCNVlvcFRZREE9PQo="
+    },
+    "darwin-x86_64": {
+      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.34/AgentProfiles_1.0.34_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbWI3dmxBY3MrUGF3dnlRanpRMjU1OEh5R0YzUGp1NzBjbHNxSGhBOTcyVEZPdVM4QUs0U1NVbTV1TlkrQUdIaWZjWEJxUXd2YXdlZksvdzR4YUFiUUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjQwMjA3CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMzRfdW5pdmVyc2FsLmFwcC50YXIuZ3oKVkdDUTltYm1nUWZmVVp4MWc2RVYzbEcwZmdjSXNiVDIxY3ZqVjR1Mm9pQWtLU2Vjd3ZHS3hZWWk3Zm1JWFZhSWVtWmRNVkgrcUgvOTNCNVlvcFRZREE9PQo="
+    }
+  }
+}
