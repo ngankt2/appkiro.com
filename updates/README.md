@@ -5,6 +5,7 @@ This repository hosts public installers and update manifests for multiple apps. 
 | App | Update manifest | Release tags |
 | --- | --- | --- |
 | AgentProfiles | [`agentprofiles/latest.json`](agentprofiles/latest.json) | `agentprofiles-v<version>` |
+| Kiro Password Manager | [`appkiro-password-manager/latest.json`](appkiro-password-manager/latest.json) | `appkiro-password-manager-v<version>` |
 
 The stable AgentProfiles endpoint is:
 
