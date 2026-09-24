@@ -1,0 +1,22 @@
+{
+  "product": "Kiro Password Manager",
+  "version": "1.0.17",
+  "architectures": [
+    "arm64"
+  ],
+  "minimum_macos": "13.0",
+  "signing": "ad hoc",
+  "notarized": false,
+  "bundle_signature_verified": true,
+  "updater_signature_verified": true,
+  "updater_installation_verified": true,
+  "archive": "KiroPasswordManager_1.0.17_arm64.app.tar.gz",
+  "sha256": "8dbded01c68c10d3e84afeb5dda654e9666d42f57ae4e10e0fee1565862604de",
+  "source_commit": "66f574e1407cf4b51224d1a00d74fc620398b095",
+  "validation": {
+    "lint": "passed",
+    "typecheck": "passed",
+    "automated_tests_passed": 157,
+    "renderer_e2e_tests_passed": 4
+  }
+}
