@@ -1,5 +1,11 @@
 {
-  "version": "0.0.0",
-  "notes": "No release published yet.",
-  "platforms": {}
+  "version": "1.0.17",
+  "notes": "Kiro Password Manager 1.0.17 for macOS Apple Silicon.\n\n- Manage encrypted local vaults with folders, tags, search, password generation, TOTP, history, and backups.\n- Filter accounts from the sidebar tag cloud.\n- Choose a bundled brand logo, an image URL, or a website favicon. Saved images remain cached until you replace them.\n- Use the expanded logo catalog, including WeChat, Messenger, and major international banks.\n- See each account's last update on the right: time for today, day/month within the same year, and day/month/year for older years.\n- Randomize the concealed positions each time partial password preview is used.\n\nDownload KiroPasswordManager_1.0.17_arm64.app.tar.gz for macOS 13 or later on Apple Silicon. Extract the archive, move Kiro Password Manager.app to Applications, quit any older instance, and open the new app.\n\nThis early access build is ad hoc signed and has not been notarized by Apple. The updater verifies its separate signed package; that signature does not replace Apple notarization.\n\nValidation: lint and TypeScript checks passed, 157 automated tests passed, four renderer end-to-end tests passed, and the packaged updater signature and installation were verified in a disposable test application.\n",
+  "pub_date": "2026-09-24T08:35:05.558Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "url": "https://github.com/ngankt2/appkiro.com/releases/download/appkiro-password-manager-v1.0.17/KiroPasswordManager_1.0.17_arm64.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZTl0WnFtQmszRUJLNldCb1RGRnVrdGlRSW5xZ1Y2eGYrMmxveUtESEoxZkk0WWxyVVhTdGRhMzhrQnEyU2tzSDA5M2tNMGRqbWtCSjZwTWdIcjE3L1N2TUZieDZFWkFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjM4OTA1CWZpbGU6S2lybyBQYXNzd29yZCBNYW5hZ2VyLmFwcC50YXIuZ3oJdmVyc2lvbjoxLjAuMTcKdzJONHVaN0trZmNjMVhmUUtlZ2NiUDJ2N1FwSUFUdHNVMEp5QUNyaGdubnBGUEsycXMxUTJHdlduWmUrUlpMSmM0ZStpQU5STUVIU0QxaHR1dzZZQ0E9PQo="
+    }
+  }
 }

@@ -2,10 +2,12 @@
 
 This repository hosts public installers and update manifests for multiple apps. Application source code and private signing keys belong outside this repository.
 
+See the [app catalog](../apps/README.md) for product introductions, features, current downloads, and release notes.
+
 | App | Update manifest | Release tags |
 | --- | --- | --- |
-| AgentProfiles | [`agentprofiles/latest.json`](agentprofiles/latest.json) | `agentprofiles-v<version>` |
-| Kiro Password Manager | [`appkiro-password-manager/latest.json`](appkiro-password-manager/latest.json) | `appkiro-password-manager-v<version>` |
+| [AgentProfiles](../apps/agentprofiles/README.md) | [`agentprofiles/latest.json`](agentprofiles/latest.json) | `agentprofiles-v<version>` |
+| [Kiro Password Manager](../apps/appkiro-password-manager/README.md) | [`appkiro-password-manager/latest.json`](appkiro-password-manager/latest.json) | `appkiro-password-manager-v<version>` |
 
 The stable AgentProfiles endpoint is:
 
@@ -39,6 +41,8 @@ python3 scripts/publish-release.py agentprofiles /absolute/path/to/release-artif
 ```
 
 The default is a dry run. Publishing creates a draft release with a product-specific tag, uploads the payloads, publishes it without changing the repository-wide “latest” release, then commits and pushes only that app's manifest. Other apps' channels are untouched. It refuses an existing release tag and never replaces prior artifacts. If the final manifest push fails, the release exists but clients remain on the previous channel until the manifest commit is pushed.
+
+After the release assets are available, update the current version, download links, and release notes in `apps/<app>/README.md`, and update the version listed in `apps/README.md`.
 
 The publisher checks manifest structure, product namespace, version increases, payload filenames, and matching signature files. The app performs cryptographic verification before installation. Release assets must be signed and tested by the private build process before publishing; macOS public distribution also needs Developer ID signing and Apple notarization.
 
