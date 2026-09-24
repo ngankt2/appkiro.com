@@ -1,51 +1,53 @@
 # Kiro Password Manager
 
-[← Danh sách ứng dụng](../README.md)
+[App catalog](../README.md) · [Appkiro website](https://appkiro.com)
 
-Kiro Password Manager lưu mật khẩu và thông tin tài khoản trong kho mã hóa trên thiết bị. Tạo kho bằng mật khẩu chính, tổ chức dữ liệu theo thư mục và thẻ, rồi tìm kiếm, xem hoặc sửa tài khoản trong một giao diện thống nhất.
+Kiro Password Manager stores passwords and account details in encrypted vaults on your device. Create a vault with a master password, organize entries with folders and tags, and search, view, or edit accounts in one place.
 
-Kho được lưu thành file `.akpr` mã hóa. Ứng dụng không yêu cầu tài khoản trực tuyến; mạng được dùng để kiểm tra bản cập nhật và tải icon, favicon theo lựa chọn của người dùng.
+Vaults are stored as encrypted `.akpr` files. No online account is required. Network connections are used to check for updates and download icons or website favicons when requested.
 
-## Tính năng
+## Features
 
-- Quản lý mật khẩu, ghi chú, thông tin API, biến môi trường và các trường tùy chỉnh.
-- Tổ chức theo thư mục, thẻ, mục yêu thích; bấm badge thẻ ở sidebar để lọc tài khoản.
-- Tạo mật khẩu, xem mã TOTP và hiển thị một phần mật khẩu với vị trí che thay đổi sau mỗi lần bấm.
-- Chọn logo thương hiệu, ngân hàng, ảnh từ URL hoặc favicon của website. Ảnh được lưu trong kho mã hóa và giữ lại đến khi người dùng đổi ảnh hoặc icon.
-- Xem thời gian cập nhật gần nhất ở bên phải từng dòng tài khoản.
-- Xem lịch sử sửa đổi, sao lưu tự động hoặc thủ công, khôi phục và xuất kho mã hóa.
-- Nhập dữ liệu KeePass `.kdbx` với bước xem trước trước khi tạo kho mới.
-- Tự khóa kho, kiểm soát thời gian hiển thị mật khẩu và xóa clipboard do ứng dụng quản lý.
+- Manage passwords, notes, API credentials, environment variables, and custom fields.
+- Organize entries with folders, tags, and favorites. Select a tag badge in the sidebar to filter accounts.
+- Generate passwords, view TOTP codes, and reveal part of a password with a different masking pattern each time.
+- Choose a bundled brand or bank logo, an image URL, or a website favicon. Images are cached in the encrypted vault until you replace the image or icon.
+- See when each account was last updated on the right side of its row.
+- Review edit history, create automatic or manual backups, restore data, and export encrypted vaults.
+- Import KeePass `.kdbx` data with a preview before creating a new vault.
+- Automatically lock vaults, limit how long passwords remain visible, and clear secrets copied by the app.
 
-## Tải và cài đặt
+## Download and installation
 
-| Thông tin | Bản hiện tại |
+| Detail | Current release |
 | --- | --- |
-| Phiên bản | **1.0.17** |
-| Hệ điều hành | macOS 13 trở lên |
-| Kiến trúc | Apple Silicon (arm64) |
-| Trạng thái | Bản thử nghiệm, ký ad hoc, chưa notarize |
+| Version | **1.0.17** |
+| Operating system | macOS 13 or later |
+| Architecture | Apple Silicon (arm64) |
+| Release status | Early access, ad hoc signed, not notarized |
 
-**[Tải Kiro Password Manager 1.0.17 cho macOS (.app.tar.gz)](https://github.com/ngankt2/appkiro.com/releases/download/appkiro-password-manager-v1.0.17/KiroPasswordManager_1.0.17_arm64.app.tar.gz)**
+**[Download Kiro Password Manager 1.0.17 for macOS (.app.tar.gz)](https://github.com/ngankt2/appkiro.com/releases/download/appkiro-password-manager-v1.0.17/KiroPasswordManager_1.0.17_arm64.app.tar.gz)**
 
-1. Giải nén file tải về để nhận `Kiro Password Manager.app`.
-2. Chuyển ứng dụng vào Applications.
-3. Thoát bản cũ nếu đang chạy, rồi mở bản mới.
+1. Extract the downloaded archive to get `Kiro Password Manager.app`.
+2. Move the app into Applications.
+3. Quit any older instance, then open the new app.
 
-## Cập nhật 1.0.17
+## What's new in 1.0.17
 
-- Sử dụng tên sản phẩm **Kiro Password Manager** trên giao diện.
-- Bổ sung bộ lọc thẻ ở sidebar và lưu ảnh icon, favicon để dùng lại.
-- Mở rộng logo thương hiệu với WeChat, Messenger và các ngân hàng quốc tế; điều chỉnh hộp chọn để nhãn dễ đọc trên cửa sổ nhỏ.
-- Đặt thời gian cập nhật bên phải từng tài khoản: `HH:mm` nếu cùng ngày, `dd/MM` nếu cùng năm và `dd/MM/yyyy` nếu khác năm.
-- Thay đổi ngẫu nhiên các vị trí bị che khi xem một phần mật khẩu.
+- Use the **Kiro Password Manager** product name throughout the interface.
+- Filter accounts by tags in the sidebar and reuse cached icons and favicons.
+- Choose from an expanded logo catalog, including WeChat, Messenger, and major international banks, with readable labels in smaller windows.
+- Display each account's last update on the right: `HH:mm` for today, `dd/MM` for other dates in the current year, and `dd/MM/yyyy` for dates in other years.
+- Randomize the concealed positions each time partial password preview is used.
 
-Có thể kiểm tra bản mới từ Cài đặt, menu ứng dụng hoặc số phiên bản ở chân trang. Ứng dụng cũng kiểm tra khi khởi động và mỗi sáu giờ khi đang hiển thị. Người dùng chủ động chọn tải, cài đặt và khởi động lại.
+Check for updates from Settings, the app menu, or the version number in the footer. The app also checks at startup and every six hours while visible. You choose when to download, install, and restart.
 
-| Tài nguyên cập nhật | Liên kết |
+| Update resource | Link |
 | --- | --- |
-| Bản phát hành hiện tại | [Kiro Password Manager 1.0.17](https://github.com/ngankt2/appkiro.com/releases/tag/appkiro-password-manager-v1.0.17) |
-| Chữ ký gói cập nhật | [.sig](https://github.com/ngankt2/appkiro.com/releases/download/appkiro-password-manager-v1.0.17/KiroPasswordManager_1.0.17_arm64.app.tar.gz.sig) |
-| Mã kiểm tra SHA-256 | [SHA256SUMS](https://github.com/ngankt2/appkiro.com/releases/download/appkiro-password-manager-v1.0.17/SHA256SUMS) |
-| Kênh cập nhật | [latest.json](https://raw.githubusercontent.com/ngankt2/appkiro.com/main/updates/appkiro-password-manager/latest.json) |
-| Lịch sử phiên bản | [Các bản phát hành Kiro Password Manager](https://github.com/ngankt2/appkiro.com/releases?q=appkiro-password-manager) |
+| Current release | [Kiro Password Manager 1.0.17](https://github.com/ngankt2/appkiro.com/releases/tag/appkiro-password-manager-v1.0.17) |
+| Update package signature | [.sig](https://github.com/ngankt2/appkiro.com/releases/download/appkiro-password-manager-v1.0.17/KiroPasswordManager_1.0.17_arm64.app.tar.gz.sig) |
+| SHA-256 checksums | [SHA256SUMS](https://github.com/ngankt2/appkiro.com/releases/download/appkiro-password-manager-v1.0.17/SHA256SUMS) |
+| Update channel | [latest.json](https://raw.githubusercontent.com/ngankt2/appkiro.com/main/updates/appkiro-password-manager/latest.json) |
+| Release history | [All Kiro Password Manager releases](https://github.com/ngankt2/appkiro.com/releases?q=appkiro-password-manager) |
+
+Learn more at [appkiro.com](https://appkiro.com).

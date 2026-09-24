@@ -1,12 +1,14 @@
-# Ứng dụng Appkiro
+# Appkiro Apps
 
-Danh sách ứng dụng, tính năng và các bản tải về. Mỗi ứng dụng có trang giới thiệu và kênh cập nhật riêng.
+[Visit appkiro.com](https://appkiro.com) · [All releases](https://github.com/ngankt2/appkiro.com/releases)
 
-| Ứng dụng | Giới thiệu | Bản mới nhất | Nền tảng có bản tải |
+Explore Appkiro desktop apps, their features, and available downloads. Each app has its own overview, installation guide, release history, and update channel.
+
+| App | Description | Latest release | Available platforms |
 | --- | --- | --- | --- |
-| [AgentProfiles](agentprofiles/README.md) | Quản lý nhiều profile Desktop, Terminal và workspace theo từng tài khoản. | [1.0.24](https://github.com/ngankt2/appkiro.com/releases/tag/agentprofiles-v1.0.24) | macOS 11+, Apple Silicon và Intel |
-| [Kiro Password Manager](appkiro-password-manager/README.md) | Quản lý mật khẩu và thông tin tài khoản trong kho mã hóa trên thiết bị. | [1.0.17](https://github.com/ngankt2/appkiro.com/releases/tag/appkiro-password-manager-v1.0.17) | macOS 13+, Apple Silicon |
+| [AgentProfiles](agentprofiles/README.md) | Manage Desktop and Terminal profiles and workspaces for separate accounts. | [1.0.24](https://github.com/ngankt2/appkiro.com/releases/tag/agentprofiles-v1.0.24) | macOS 11+, Apple Silicon and Intel |
+| [Kiro Password Manager](appkiro-password-manager/README.md) | Store passwords and account details in encrypted vaults on your device. | [1.0.17](https://github.com/ngankt2/appkiro.com/releases/tag/appkiro-password-manager-v1.0.17) | macOS 13+, Apple Silicon |
 
-Mở trang của từng ứng dụng để xem tính năng, hướng dẫn cài đặt, nội dung cập nhật và link tải đúng phiên bản. Các bản macOS hiện tại là bản thử nghiệm có chữ ký ad hoc, chưa được Apple notarize.
+Open an app's overview for its features, installation instructions, release notes, and versioned download links. The current macOS packages are early access builds with ad hoc signatures and have not been notarized by Apple.
 
-[Hướng dẫn phát hành và kênh cập nhật](../updates/README.md) · [Tất cả bản phát hành](https://github.com/ngankt2/appkiro.com/releases)
+[Release and update guide](../updates/README.md) · [Appkiro website](https://appkiro.com)

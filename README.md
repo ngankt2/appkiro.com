@@ -1,6 +1,6 @@
 # appkiro.com
 
-> Desktop apps: [app catalog](apps/README.md) · [installers and update channels](updates/README.md).
+> [Visit appkiro.com](https://appkiro.com) · [App catalog](apps/README.md) · [Installers and update channels](updates/README.md).
 
 > Complete web tools for everyone. Production-ready browser-based suite for images, color, PDF, video, audio, text, code, network, calculators, and everyday digital work.
 

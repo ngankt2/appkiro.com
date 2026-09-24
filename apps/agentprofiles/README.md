@@ -1,49 +1,49 @@
 # AgentProfiles
 
-[← Danh sách ứng dụng](../README.md)
+[App catalog](../README.md) · [Appkiro website](https://appkiro.com) · [Product page](https://appkiro.com/agent-profiles)
 
-AgentProfiles giúp quản lý nhiều profile cho các công cụ Desktop và Terminal. Tách tài khoản làm việc, cá nhân hoặc khách hàng bằng thư mục cấu hình riêng, rồi mở đúng profile cùng dự án cần dùng.
+AgentProfiles helps you manage multiple profiles for Desktop and Terminal tools. Keep work, personal, and client accounts in separate configuration directories, then open the profile and project you need.
 
-Ứng dụng quản lý profile trên máy và khởi chạy các công cụ đã cài sẵn. Từng công cụ xử lý đăng nhập của chính nó.
+Profile management runs locally and launches tools already installed on your computer. Each tool handles its own sign-in process.
 
-## Tính năng
+## Features
 
-- Tạo, mở, dừng, đổi tên, đổi màu và sửa launcher của profile.
-- Quản lý profile Desktop và Terminal trong các danh sách riêng; tìm kiếm, sắp xếp và lọc theo công cụ.
-- Xem trạng thái đang chạy, thông tin tài khoản và hạn mức sử dụng khi công cụ hỗ trợ.
-- Lưu workspace theo profile, IDE và thư mục dự án để mở lại nhanh.
-- Sao lưu, khôi phục thiết lập và mở thư mục lưu trữ profile từ ứng dụng.
-- Thu gọn sidebar, đổi giao diện và chọn ngôn ngữ, bao gồm tiếng Việt.
-- Kiểm tra cập nhật, xem nội dung bản mới và chọn thời điểm tải, cài đặt, khởi động lại.
+- Create, launch, stop, rename, recolor, and repair profile launchers.
+- Manage Desktop and Terminal profiles in separate lists with search, sorting, and filters by tool.
+- View running status, account details, and usage limits when supported by the selected tool.
+- Save workspaces with a profile, IDE, and project folder for quick access.
+- Back up and restore settings, and open profile storage folders from the app.
+- Collapse the sidebar, change the appearance, and choose a language, including English and Vietnamese.
+- Check for updates, read release notes, and choose when to download, install, and restart.
 
-## Tải và cài đặt
+## Download and installation
 
-| Thông tin | Bản hiện tại |
+| Detail | Current release |
 | --- | --- |
-| Phiên bản | **1.0.24** |
-| Hệ điều hành | macOS 11 trở lên |
-| Kiến trúc | Universal: Apple Silicon và Intel |
-| Trạng thái | Bản thử nghiệm, ký ad hoc, chưa notarize |
+| Version | **1.0.24** |
+| Operating system | macOS 11 or later |
+| Architecture | Universal: Apple Silicon and Intel |
+| Release status | Early access, ad hoc signed, not notarized |
 
-**[Tải AgentProfiles 1.0.24 cho macOS (.dmg)](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal-local.dmg)**
+**[Download AgentProfiles 1.0.24 for macOS (.dmg)](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal-local.dmg)**
 
-Mở file DMG, kéo AgentProfiles vào Applications rồi mở ứng dụng. Các công cụ muốn dùng với profile cần được cài sẵn trên máy.
+Open the DMG, drag AgentProfiles into Applications, and launch the app. Install the tools you want to use with your profiles before creating those profiles.
 
-## Cập nhật 1.0.24
+## What's new in 1.0.24
 
-- Lọc profile Desktop và Terminal theo công cụ, kết hợp tìm kiếm và sắp xếp.
-- Hiển thị profile vừa tạo khi bộ lọc hoặc từ khóa cũ có thể làm ẩn nó.
-- Điều chỉnh ô tìm kiếm, nút làm mới và bố cục danh sách.
-- Xem lịch sử phát hành và phiên bản đã cài trong phần giới thiệu.
-- Quản lý vị trí lưu trữ và mở các thư mục profile từ ứng dụng.
+- Filter Desktop and Terminal profiles by tool alongside search and sorting.
+- Keep newly created profiles visible when an existing filter or search would hide them.
+- Refine the search field, refresh controls, and profile list layout.
+- View release history and the installed version in About.
+- Manage storage locations and open profile folders from the app.
 
-Ứng dụng kiểm tra kênh riêng khi khởi động và mỗi sáu giờ khi đang hiển thị. Có thể kiểm tra thủ công trong **Settings → App updates**.
+The app checks its dedicated update channel at startup and every six hours while visible. You can also check manually in **Settings → App updates**.
 
-| Tài nguyên cập nhật | Liên kết |
+| Update resource | Link |
 | --- | --- |
-| Bản phát hành hiện tại | [AgentProfiles 1.0.24](https://github.com/ngankt2/appkiro.com/releases/tag/agentprofiles-v1.0.24) |
-| Gói cập nhật có chữ ký | [.app.tar.gz](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal.app.tar.gz) · [.sig](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal.app.tar.gz.sig) |
-| Kênh cập nhật | [latest.json](https://raw.githubusercontent.com/ngankt2/appkiro.com/main/updates/agentprofiles/latest.json) |
-| Lịch sử phiên bản | [Các bản phát hành AgentProfiles](https://github.com/ngankt2/appkiro.com/releases?q=agentprofiles) |
+| Current release | [AgentProfiles 1.0.24](https://github.com/ngankt2/appkiro.com/releases/tag/agentprofiles-v1.0.24) |
+| Signed update package | [.app.tar.gz](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal.app.tar.gz) · [.sig](https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.24/AgentProfiles_1.0.24_universal.app.tar.gz.sig) |
+| Update channel | [latest.json](https://raw.githubusercontent.com/ngankt2/appkiro.com/main/updates/agentprofiles/latest.json) |
+| Release history | [All AgentProfiles releases](https://github.com/ngankt2/appkiro.com/releases?q=agentprofiles) |
 
-[Website AgentProfiles](https://appkiro.com/agent-profiles)
+Learn more at [appkiro.com](https://appkiro.com).
