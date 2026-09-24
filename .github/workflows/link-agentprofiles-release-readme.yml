@@ -1,0 +1,75 @@
+name: Add website links to AgentProfiles download instructions
+
+on:
+  push:
+    branches: [release/password-manager-1.0.17]
+    paths: [.github/workflows/link-agentprofiles-release-readme.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    if: github.repository == 'ngankt2/appkiro.com'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_REPO: ngankt2/appkiro.com
+      RELEASE_TAG: agentprofiles-v1.0.34
+    steps:
+      - name: Download and verify the existing documentation
+        run: |
+          gh api "repos/$RELEASE_REPO/releases/tags/$RELEASE_TAG" > before.json
+          gh release download "$RELEASE_TAG" --repo "$RELEASE_REPO" \
+            --pattern README.txt --pattern SHA256SUMS
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          release = json.loads(Path('before.json').read_text())
+          assert release['tag_name'] == 'agentprofiles-v1.0.34' and not release['draft']
+          assets = {asset['name']: asset for asset in release['assets']}
+          for name in ('README.txt', 'SHA256SUMS'):
+              data = Path(name).read_bytes()
+              assert assets[name]['digest'] == 'sha256:' + hashlib.sha256(data).hexdigest()
+          checksums = Path('SHA256SUMS').read_text().splitlines()
+          readme_entries = [line for line in checksums if line.split(maxsplit=1)[1].lstrip('*') == 'README.txt']
+          assert len(readme_entries) == 1
+          assert readme_entries[0].split()[0] == hashlib.sha256(Path('README.txt').read_bytes()).hexdigest()
+          text = Path('README.txt').read_text()
+          if 'Website: https://appkiro.com\n' not in text:
+              text = text.rstrip() + '\n\nWebsite: https://appkiro.com\nProduct page: https://appkiro.com/agent-profiles\n'
+              Path('README.txt').write_text(text)
+          digest = hashlib.sha256(Path('README.txt').read_bytes()).hexdigest()
+          Path('SHA256SUMS').write_text('\n'.join(digest + '  README.txt' if line == readme_entries[0] else line for line in checksums) + '\n')
+          PY
+      - name: Update download instructions and their checksum
+        run: |
+          gh api "repos/$RELEASE_REPO/releases/tags/$RELEASE_TAG" > current.json
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          def assets(file):
+              return {item['name']: (item['id'], item['digest']) for item in json.loads(Path(file).read_text())['assets']}
+          assert assets('before.json') == assets('current.json'), 'Release changed during preparation'
+          PY
+          gh release upload "$RELEASE_TAG" --repo "$RELEASE_REPO" --clobber README.txt SHA256SUMS
+      - name: Verify the published documentation and application artifacts
+        run: |
+          gh api "repos/$RELEASE_REPO/releases/tags/$RELEASE_TAG" > after.json
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          before = json.loads(Path('before.json').read_text())
+          after = json.loads(Path('after.json').read_text())
+          old = {item['name']: item for item in before['assets']}
+          new = {item['name']: item for item in after['assets']}
+          assert old.keys() == new.keys()
+          for name in old:
+              if name in ('README.txt', 'SHA256SUMS'):
+                  assert new[name]['digest'] == 'sha256:' + hashlib.sha256(Path(name).read_bytes()).hexdigest()
+              else:
+                  assert new[name]['digest'] == old[name]['digest'] and new[name]['size'] == old[name]['size']
+          assert before['body'] == after['body'] and before['prerelease'] == after['prerelease']
+          print('Published website links; all application artifacts and release notes are unchanged.')
+          PY
