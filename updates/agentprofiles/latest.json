@@ -1,15 +1,15 @@
 {
-  "version": "1.0.34",
-  "notes": "AgentProfiles 1.0.34 packages the current desktop source for macOS on Apple Silicon and Intel.\n\nChanges since the previous public build:\n\n- Desktop and Terminal tabs sit below search for easier navigation.\n- Account details remain available after closing profiles or restarting the app.\n- Compact controls and clearer selected states improve the workspace and Light appearance.\n- The wider profile editor keeps all color options together.\n\nDownload `AgentProfiles_1.0.34_universal-local.dmg`, open it, and drag AgentProfiles to Applications.\n\nThis build uses an ad hoc signature and is not notarized by Apple. macOS Gatekeeper may block it when downloaded. The updater package has a separate cryptographic signature; that signature does not replace Apple notarization.\n\nValidation: 85 JavaScript tests, 131 Rust tests, 6 update-interface tests, and 3 packaging tests passed. Eight Rust tests requiring configured external apps or accounts were skipped. The universal executable, application signature, and mounted installer contents were verified.\n\nWebsite: https://appkiro.com/agent-profiles\n",
-  "pub_date": "2026-09-24T08:56:47.936859Z",
+  "version": "1.0.39",
+  "notes": "Kiwi AI Profiles 1.0.39 for macOS on Apple Silicon and Intel.\n\n- AgentProfiles is now Kiwi AI Profiles, with a new app icon.\n- A redesigned workspace with a floating sidebar and a single profile list.\n- In-app updates now come from the Kiwi AI Profiles releases on GitHub. Updates are signed and verified before they are installed.\n\nYour profiles and settings are kept when you update.\n",
+  "pub_date": "2026-10-20T16:20:34.453572Z",
   "platforms": {
     "darwin-aarch64": {
-      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.34/AgentProfiles_1.0.34_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbWI3dmxBY3MrUGF3dnlRanpRMjU1OEh5R0YzUGp1NzBjbHNxSGhBOTcyVEZPdVM4QUs0U1NVbTV1TlkrQUdIaWZjWEJxUXd2YXdlZksvdzR4YUFiUUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjQwMjA3CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMzRfdW5pdmVyc2FsLmFwcC50YXIuZ3oKVkdDUTltYm1nUWZmVVp4MWc2RVYzbEcwZmdjSXNiVDIxY3ZqVjR1Mm9pQWtLU2Vjd3ZHS3hZWWk3Zm1JWFZhSWVtWmRNVkgrcUgvOTNCNVlvcFRZREE9PQo="
+      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.39/KiwiAIProfiles_1.0.39_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbVUzQTh5RDlnZDlRV3ZJK2lpU0k3TzlycUpvamN0Z25LQURnVGFIUTZhUE1PZnhqeGw5czBPa0N5WkYxLzBieldhSlFmTGxoODh3YS9SeFNzaE5GeHdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTEzMjM0CWZpbGU6S2l3aUFJUHJvZmlsZXNfMS4wLjM5X3VuaXZlcnNhbC5hcHAudGFyLmd6CmRRSk5Jek1YLy9jRmFCaEI1anVMeklZYi9zYlA4dnV5VGc0RnBXS0V3cWtpdFlLSkdQbkM5dnZIY1RlRHV2bG9VZzgrYldWUUUxQUtqZ2pTOVp4eUJBPT0K"
     },
     "darwin-x86_64": {
-      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.34/AgentProfiles_1.0.34_universal.app.tar.gz",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbWI3dmxBY3MrUGF3dnlRanpRMjU1OEh5R0YzUGp1NzBjbHNxSGhBOTcyVEZPdVM4QUs0U1NVbTV1TlkrQUdIaWZjWEJxUXd2YXdlZksvdzR4YUFiUUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMjQwMjA3CWZpbGU6QWdlbnRQcm9maWxlc18xLjAuMzRfdW5pdmVyc2FsLmFwcC50YXIuZ3oKVkdDUTltYm1nUWZmVVp4MWc2RVYzbEcwZmdjSXNiVDIxY3ZqVjR1Mm9pQWtLU2Vjd3ZHS3hZWWk3Zm1JWFZhSWVtWmRNVkgrcUgvOTNCNVlvcFRZREE9PQo="
+      "url": "https://github.com/ngankt2/appkiro.com/releases/download/agentprofiles-v1.0.39/KiwiAIProfiles_1.0.39_universal.app.tar.gz",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSQkhPNWl5M0JpbVUzQTh5RDlnZDlRV3ZJK2lpU0k3TzlycUpvamN0Z25LQURnVGFIUTZhUE1PZnhqeGw5czBPa0N5WkYxLzBieldhSlFmTGxoODh3YS9SeFNzaE5GeHdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyNTEzMjM0CWZpbGU6S2l3aUFJUHJvZmlsZXNfMS4wLjM5X3VuaXZlcnNhbC5hcHAudGFyLmd6CmRRSk5Jek1YLy9jRmFCaEI1anVMeklZYi9zYlA4dnV5VGc0RnBXS0V3cWtpdFlLSkdQbkM5dnZIY1RlRHV2bG9VZzgrYldWUUUxQUtqZ2pTOVp4eUJBPT0K"
     }
   }
 }
