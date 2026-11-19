@@ -9,7 +9,7 @@ See the [app catalog](../apps/README.md) for product introductions, features, cu
 | App | Update manifest | Release tags |
 | --- | --- | --- |
 | [AgentProfiles](../apps/agentprofiles/README.md) | [`agentprofiles/latest.json`](agentprofiles/latest.json) | `agentprofiles-v<version>` |
-| [Kiro Password Manager](../apps/appkiro-password-manager/README.md) | [`appkiro-password-manager/latest.json`](appkiro-password-manager/latest.json) | `appkiro-password-manager-v<version>` |
+| [Kiwi Password](../apps/appkiro-password-manager/README.md) (formerly Kiro Password Manager) | [`appkiro-password-manager/latest.json`](appkiro-password-manager/latest.json) — legacy channel for 1.0.28 and earlier; 1.0.29+ update from [kiwi-password-manager releases](https://github.com/ngankt2/kiwi-password-manager/releases) | `appkiro-password-manager-v<version>` |
 
 The stable AgentProfiles endpoint is:
 

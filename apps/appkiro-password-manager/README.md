@@ -1,53 +1,54 @@
-# Kiro Password Manager
+# Kiwi Password
 
-[App catalog](../README.md) · [Appkiro website](https://appkiro.com)
+[App catalog](../README.md) · [Appkiro website](https://appkiro.com) · [Product page](https://appkiro.com/kiwi-password-manager) · [Source code](https://github.com/ngankt2/kiwi-password-manager)
 
-Kiro Password Manager stores passwords and account details in encrypted vaults on your device. Create a vault with a master password, organize entries with folders and tags, and search, view, or edit accounts in one place.
-
-Vaults are stored as encrypted `.akpr` files. No online account is required. Network connections are used to check for updates and download icons or website favicons when requested.
+Kiwi Password (formerly Kiro Password Manager) is an offline, open-source password manager. It keeps passwords, two-factor codes, notes and files in an encrypted vault stored only on your device. No account, no cloud sync, no tracking.
 
 ## Features
 
-- Manage passwords, notes, API credentials, environment variables, and custom fields.
-- Organize entries with folders, tags, and favorites. Select a tag badge in the sidebar to filter accounts.
-- Generate passwords, view TOTP codes, and reveal part of a password with a different masking pattern each time.
-- Choose a bundled brand or bank logo, an image URL, or a website favicon. Images are cached in the encrypted vault until you replace the image or icon.
-- See when each account was last updated on the right side of its row.
-- Review edit history, create automatic or manual backups, restore data, and export encrypted vaults.
-- Import KeePass `.kdbx` data with a preview before creating a new vault.
-- Automatically lock vaults, limit how long passwords remain visible, and clear secrets copied by the app.
+- **Offline encrypted vault** — passwords, logins, secure notes, custom fields and attachments live in one encrypted file on your device. Nothing is uploaded.
+- **Touch ID unlock** — the vault key is sealed by the Secure Enclave.
+- **Built-in authenticator (TOTP)** — keep two-factor codes next to the login they protect.
+- **KeePass import** — preview a `.kdbx` database and keep groups, custom fields, history, attachments, tags and OTP settings. The original file is never modified.
+- **Version history and encrypted backups** — every entry keeps its previous versions; automatic and manual backups are encrypted.
+- **Auto-lock and clipboard protection** — the vault locks when you leave it, and copied secrets are cleared automatically.
 
 ## Download and installation
 
 | Detail | Current release |
 | --- | --- |
-| Version | **1.0.17** |
+| Version | **1.0.32** |
 | Operating system | macOS 13 or later |
-| Architecture | Apple Silicon (arm64) |
-| Release status | Early access, ad hoc signed, not notarized |
+| Architecture | Separate builds for Apple Silicon and Intel |
+| Signing | Apple Developer ID, notarized by Apple |
+| License | GPL-3.0 |
 
-**[Download Kiro Password Manager 1.0.17 for macOS (.app.tar.gz)](https://github.com/ngankt2/appkiro.com/releases/download/appkiro-password-manager-v1.0.17/KiroPasswordManager_1.0.17_arm64.app.tar.gz)**
+- **[Download for Apple Silicon (M1, M2, M3, M4…)](https://github.com/ngankt2/kiwi-password-manager/releases/download/v1.0.32/KiwiPassword_1.0.32_apple-silicon.dmg)**
+- **[Download for Intel Macs](https://github.com/ngankt2/kiwi-password-manager/releases/download/v1.0.32/KiwiPassword_1.0.32_intel.dmg)**
 
-1. Extract the downloaded archive to get `Kiro Password Manager.app`.
-2. Move the app into Applications.
-3. Quit any older instance, then open the new app.
+Not sure which one you need? Open Apple menu → **About This Mac**: a **Chip** line such as "Apple M1" means Apple Silicon; a **Processor** line with "Intel" means an Intel Mac.
 
-## What's new in 1.0.17
+1. Open the `.dmg`.
+2. Drag **Kiwi Password** onto the **Applications** folder, following the arrow.
+3. Open Kiwi Password from Applications.
 
-- Use the **Kiro Password Manager** product name throughout the interface.
-- Filter accounts by tags in the sidebar and reuse cached icons and favicons.
-- Choose from an expanded logo catalog, including WeChat, Messenger, and major international banks, with readable labels in smaller windows.
-- Display each account's last update on the right: `HH:mm` for today, `dd/MM` for other dates in the current year, and `dd/MM/yyyy` for dates in other years.
-- Randomize the concealed positions each time partial password preview is used.
+## What's new in 1.0.32
 
-Check for updates from Settings, the app menu, or the version number in the footer. The app also checks at startup and every six hours while visible. You choose when to download, install, and restart.
+- A new installer window: open the `.dmg` and drag Kiwi Password onto Applications. The installer volume carries the Kiwi Password icon.
+- The app and installers remain signed with an Apple Developer ID and notarized by Apple.
+- Kiwi Password is now open source under the GPL-3.0 license.
+
+## Updates
+
+Kiwi Password checks for updates at startup and every six hours while visible, and from Settings, the app menu or the version number in the footer. You choose when to download, install and restart. Every update is verified with the app's Minisign key before installation.
+
+Versions 1.0.29 and later update themselves. Kiro Password Manager 1.0.28 and earlier used a different update channel and need one manual install of the latest `.dmg`.
 
 | Update resource | Link |
 | --- | --- |
-| Current release | [Kiro Password Manager 1.0.17](https://github.com/ngankt2/appkiro.com/releases/tag/appkiro-password-manager-v1.0.17) |
-| Update package signature | [.sig](https://github.com/ngankt2/appkiro.com/releases/download/appkiro-password-manager-v1.0.17/KiroPasswordManager_1.0.17_arm64.app.tar.gz.sig) |
-| SHA-256 checksums | [SHA256SUMS](https://github.com/ngankt2/appkiro.com/releases/download/appkiro-password-manager-v1.0.17/SHA256SUMS) |
-| Update channel | [latest.json](https://raw.githubusercontent.com/ngankt2/appkiro.com/main/updates/appkiro-password-manager/latest.json) |
-| Release history | [All Kiro Password Manager releases](https://github.com/ngankt2/appkiro.com/releases?q=appkiro-password-manager) |
+| Current release | [Kiwi Password 1.0.32](https://github.com/ngankt2/kiwi-password-manager/releases/tag/v1.0.32) |
+| Update channel | [latest.json](https://github.com/ngankt2/kiwi-password-manager/releases/latest/download/latest.json) |
+| Release history | [All Kiwi Password releases](https://github.com/ngankt2/kiwi-password-manager/releases) |
+| Earlier Kiro Password Manager releases | [Releases on appkiro.com](https://github.com/ngankt2/appkiro.com/releases?q=appkiro-password-manager) |
 
-Learn more at [appkiro.com](https://appkiro.com).
+Learn more at [appkiro.com](https://appkiro.com/kiwi-password-manager).
